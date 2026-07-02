@@ -572,7 +572,6 @@ app.get("/", (req, res) => {
         });
       }
     });
-
     
     app.post("/api/reports", verifyToken, verifyUser, async (req, res) => {
       try {

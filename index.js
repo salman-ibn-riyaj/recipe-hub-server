@@ -38,7 +38,6 @@ const likedRecipesCollection = db.collection("likedRecipes");
 app.use(cors());
 app.use(express.json());
 
-
 // client.connect()
 //   .then(() => client.db("admin").command({ ping: 1 }))
 //   .then(() => console.log("Successfully connected to MongoDB!"))
@@ -93,7 +92,6 @@ const verifyToken = async (req, res, next) => {
     return res.status(403).send({ message: "forbidden" });
   }
 };
-
 
 const verifyUser = async (req, res, next) => {
   const user = await req.user;

@@ -257,7 +257,7 @@ app.get("/", (req, res) => {
     });
 
     
-    
+
     app.get("/api/check-purchase", verifyToken, async (req, res) => {
       try {
         const { recipeId } = req.query;
@@ -291,6 +291,7 @@ app.get("/", (req, res) => {
       }
     });
 
+    
     
     app.get("/api/premiumuser", verifyToken, verifyAdmin, async (req, res) => {
       try {

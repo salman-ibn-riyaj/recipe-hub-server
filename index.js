@@ -318,7 +318,7 @@ app.get("/", (req, res) => {
       res.json(recipes);
     });
 
-    
+  
     app.get("/api/featured/:id", verifyToken, verifyUser, async (req, res) => {
       const id = req.params.id;
       console.log(id, "id");

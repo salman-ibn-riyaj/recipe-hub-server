@@ -292,7 +292,7 @@ app.get("/", (req, res) => {
     });
 
     
-    
+
     app.get("/api/premiumuser", verifyToken, verifyAdmin, async (req, res) => {
       try {
         const query = { plan: "Recipehub_Premium" };
@@ -311,7 +311,7 @@ app.get("/", (req, res) => {
       res.json(result);
     });
 
-    
+  
     app.get("/api/featured", async (req, res) => {
       const cursor = featuredCollection.find();
       const recipes = await cursor.toArray();

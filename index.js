@@ -245,7 +245,7 @@ app.get("/", (req, res) => {
     );
 
     
-    
+
     app.get("/api/purchased", verifyToken, verifyUser, async (req, res) => {
       const userEmail = req.query.email;
       const query = {};
@@ -256,6 +256,7 @@ app.get("/", (req, res) => {
       res.json(result);
     });
 
+    
     
     app.get("/api/check-purchase", verifyToken, async (req, res) => {
       try {

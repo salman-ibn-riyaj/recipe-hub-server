@@ -218,7 +218,7 @@ app.get("/", (req, res) => {
       }
     });
 
-    
+
     
     app.get(
       "/api/subscriptions",
@@ -231,6 +231,7 @@ app.get("/", (req, res) => {
       },
     );
 
+    
     
     app.get(
       "/api/purchasedData",

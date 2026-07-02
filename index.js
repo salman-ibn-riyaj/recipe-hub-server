@@ -384,7 +384,7 @@ app.get("/", (req, res) => {
         }
 
         
-        
+
         const favorite = {
           ...recipeData,
           recipeId: recipeId,
@@ -471,7 +471,6 @@ app.get("/", (req, res) => {
         res.status(500).json({ success: false, message: error.message });
       }
     });
-
     
     app.post("/api/subs", verifyToken, async (req, res) => {
       try {

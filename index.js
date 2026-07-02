@@ -201,7 +201,7 @@ app.get("/", (req, res) => {
     });
 
     
-    
+
     app.get("/api/plans", async (req, res) => {
       try {
         const query = {};
@@ -218,6 +218,7 @@ app.get("/", (req, res) => {
       }
     });
 
+    
     
     app.get(
       "/api/subscriptions",
